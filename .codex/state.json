@@ -1,10 +1,11 @@
 {
   "task_id": "20261016-3d-quote",
-  "status": "release_validation",
-  "current_step": 7,
+  "status": "completed",
+  "current_step": 8,
   "review_loops": 1,
   "max_review_loops": 3,
   "approved_paths": {"workspace": "D:\\3D报价系统", "project_children_authorized": true, "downloads": "D:\\3D报价系统\\work"},
   "artifacts": {"skill_scan": "docs/skill_scan.md", "task_brief": "docs/task_brief.md", "research": "docs/research.md", "design": "docs/design.md", "plan": "docs/plan.md", "review": "docs/review.json"},
-  "history": ["User confirmed project folder and authority to name project files/subfolders", "User selected broad formats and browser local GitHub Pages architecture", "User selected editable sample pricing", "User approved implementation and direct Pages deployment", "User replaced reference imitation with original design and React + Three.js", "Independent implementation review passed after backup validation, persistence and accessibility fixes", "Production build and live deployment verification in progress"]
+  "history": ["User confirmed project folder and authority to name project files/subfolders", "User selected broad formats and browser local GitHub Pages architecture", "User selected editable sample pricing", "User approved implementation and direct Pages deployment", "User replaced reference imitation with original design and React + Three.js", "Independent implementation review passed after backup validation, persistence and accessibility fixes", "69 tests passed locally and CI test/build/deploy succeeded", "Public Pages verified: STEP/IGES Worker and WASM, quote edits, wall sampling, persistence, risk rules, mobile and PDF/Excel exports"],
+  "deployment": {"url": "https://sophimotion.github.io/fang/", "application_commit": "9276c2bbf0b0b3f0dfa2e8c62da228f545d964c8", "workflow_run": "https://github.com/SophiMotion/fang/actions/runs/38887971965", "verified_at": "2026-10-16"}
 }

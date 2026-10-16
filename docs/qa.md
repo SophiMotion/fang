@@ -29,4 +29,14 @@
 
 F3D/F3Z 需要先在 Fusion 转换；URDF 依赖用户随附的本地附件。壁厚与风险属于采样/规则筛查，未进行完整自相交证明、切片仿真或制造验收。价格是可编辑示例。PDF 为高清图像页。大备份重算会短暂占用主线程。
 
-生产发布结果在完成线上验收后补充；本地开发验收不代表线上资源已成功部署。
+## 生产发布验收
+
+2026-10-16 发布至 https://sophimotion.github.io/fang/ ，应用提交 `9276c2bbf0b0b3f0dfa2e8c62da228f545d964c8`。GitHub Actions [38887971965](https://github.com/SophiMotion/fang/actions/runs/38887971965) 测试、构建、部署均成功。后续验收文档提交不改变部署应用。
+
+- 正式网址 HTTP 200；真实浏览器成功加载生产脚本，无失败资源或控制台异常。
+- 通过正式页面文件输入框上传 STEP 与 IGES 10 mm 立方体，两项均显示 1 cm³、10 × 10 × 10 mm、可估价。生产 Worker 正常创建，OCCT WASM 以 application/wasm 返回 200。
+- 正式页面的改数量、改材料、自定义规则、1 mm 立板壁厚、刷新恢复、备份下载、新建和历史项目均再次通过。手机 document.scrollWidth = innerWidth = 390。
+- 正式页面导出 PDF 697,241 字节、Excel 14,143 字节；Excel 四表回读总额 ¥69.08 与页面一致，PDF 两页逐页渲染检查通过。
+- 开发浏览器与生产站点分别使用独立临时浏览器上下文，验收数据未写入用户日常浏览器，也没有上传客户或模型。
+
+完整本机证据在 work/geometry-qa/ui-cad-production、work/production-export、work/ui-qa（仅本地，未提交客户模型或测试下载物）。
