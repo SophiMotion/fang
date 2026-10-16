@@ -1,0 +1,22 @@
+{
+  "status": "pass",
+  "issues": [],
+  "checked_outputs": [
+    "docs/design.md and docs/plan.md: original React + Three.js local-first scope; editable per-part configuration, customers, analysis, exports and GitHub Pages requirements",
+    "src/types.ts and all src/geometry modules: physical millimetres, immutable source geometry, signed volume/cavity handling, validation, STL/OBJ/CAD/URDF parsing, F3D/F3Z pending state, Worker errors/timeouts and partial import preservation",
+    "src/domain/defaults.ts, quote.ts and risk.ts: per-piece minimum, quantity, compatibility, cent rounding, markup-discount-tax-shipping sequence, unpriced rows, unknown thickness and threshold freshness",
+    "src/storage.ts: typed arrays, bounded untrusted backup validation, IndexedDB commit/error handling, and repaired geometry-derived backup analysis with discarded cached thickness",
+    "src/App.tsx and all src/components modules: editing, current-project transition, async failure messaging, unit changes, view-only transforms, keyboard modal interaction and accessible viewer controls",
+    "src/export modules: shared quote engine, numeric Excel amounts, excluded rows, inert spreadsheet text, Chinese raster PDF pagination and explicit searchable-text limitation",
+    "src/styles.css, src/main.tsx, package.json and vite.config.ts: responsive layout, reduced motion, React entry, local dependencies and /fang/ production base",
+    "tests/geometry.test.ts, tests/domain.test.ts and tests/storage.test.ts: reviewed existing numerical, privacy, persistence, export and failure-path coverage",
+    "Independent targeted regression: node node_modules/vitest/vitest.mjs run tests/storage.test.ts -t 'tampered|forged|fabricated' passed 3/3, with 24 unrelated tests skipped",
+    "Independent Chrome regression with paused autosave timer: change customer, open project list, click current project; unsaved customer value remains intact",
+    "Independent Chrome keyboard regression: batch modal receives initial focus, Shift+Tab and Tab wrap in both directions, Escape closes and restores the trigger focus",
+    "Independent Chrome 390px viewport regression: all four viewer controls have accessible names; document width equals viewport width",
+    "Reviewed existing work/geometry-qa/runtime-result.json: actual dev-server STEP and IGES Worker imports produce 10 mm cube dimensions and 1 cm3 volume; sampled plate thickness is 1 mm",
+    "Reviewed work/business-qa/verification.json and business-report.md: three-page Chinese PDF and four-sheet Excel reconcile to CNY 856.75; pending row amounts remain blank",
+    "Release boundary: this pass approves reviewed source for release; coordinator must still complete final production build and public GitHub Pages Worker/WASM/export smoke checks"
+  ],
+  "next_owner": "root: final production build, GitHub Pages deployment and deployed-resource verification"
+}
