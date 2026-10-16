@@ -6,7 +6,7 @@ import { evaluateRisks } from '../domain/risk'
 const WIDTH = 1680, HEIGHT = 2376, MARGIN = 112, BOTTOM = 2200
 const CONTENT = WIDTH - MARGIN * 2
 const FONT = '"Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", sans-serif'
-const money = (value: number) => `¥${value.toLocaleString('zh-CN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
+const money = (value: number) => `¥${(Object.is(value, -0) ? 0 : value).toLocaleString('zh-CN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
 
 class QuotePainter {
   canvas: HTMLCanvasElement
